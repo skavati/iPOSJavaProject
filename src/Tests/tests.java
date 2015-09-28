@@ -52,10 +52,10 @@ public class tests {
      BaseMethods.KeyInElement(page.PasswordText, "rh1");           
      BaseMethods.ClickElement(page.LoginButton);
      System.out.println("User name and password entered successfully");   
-//     BaseMethods.SwitchFrame(driver,"topFrame");            
-//     BaseMethods.ClickElement(page.Create);           
-//     BaseMethods.SwitchFrame(driver,"mainFrame");
-//     TableUtilities.TableToXML(driver,"Raised By");
+     BaseMethods.SwitchFrame(driver,"topFrame");            
+     BaseMethods.ClickElement(page.Create);           
+     BaseMethods.SwitchFrame(driver,"mainFrame");
+     TableUtil.TableToXML(driver,"Raised By");
      // testing for aruna
 //     System.out.println("\t" + TableUtilities.GetTable("Created Date").getAttribute("class"));
 //     WebElement AddItem=BaseMethods.GetElement(driver,(By.id("ibAdd")));

@@ -58,7 +58,7 @@ public class tests {
      BaseMethods.ClickElement(page.Create);           
      BaseMethods.SwitchFrame(driver,"mainFrame");
      TableUtil.TableToXML(driver,"Raised By");
-     BaseMethods.captureScreenShot(driver,"AddItemPage");
+//     BaseMethods.captureScreenShot(driver,"AddItemPage");
      // testing for aruna
 //     System.out.println("\t" + TableUtilities.GetTable("Created Date").getAttribute("class"));
 //     WebElement AddItem=BaseMethods.GetElement(driver,(By.id("ibAdd")));

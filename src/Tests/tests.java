@@ -34,9 +34,9 @@ public class tests {
 	@BeforeMethod
 	public void beforeMethod() throws Exception {
 		 
-//		driver= BaseMethods.GetDriver("ie");  
-//		driver.manage().window().maximize();        
-//       BaseMethods.driver.navigate().to("http://" + GlobalVariables.iPOSServer + "/iPOS/Web/Login.aspx"); 
+		driver= BaseMethods.GetDriver("ie");  
+		driver.manage().window().maximize();        
+       BaseMethods.driver.navigate().to("http://" + GlobalVariables.iPOSServer + "/iPOS/Web/Login.aspx"); 
 	}
 	
 	@AfterMethod
@@ -49,11 +49,11 @@ public class tests {
 
  public  void test1() throws InterruptedException, IOException { //throws InterruptedException {
 				
-//	 LoginPage page = PageFactory.initElements(driver, LoginPage.class);	
-//     BaseMethods.KeyInElement(page.UserNameText, "rh");            
-//     BaseMethods.KeyInElement(page.PasswordText, "rh1");           
-//     BaseMethods.ClickElement(page.LoginButton);
-//     System.out.println("User name and password entered successfully");   
+	 LoginPage page = PageFactory.initElements(driver, LoginPage.class);	
+     BaseMethods.KeyInElement(page.UserNameText, "rh");            
+     BaseMethods.KeyInElement(page.PasswordText, "rh1");           
+     BaseMethods.ClickElement(page.LoginButton);
+     System.out.println("User name and password entered successfully");   
 //     BaseMethods.SwitchFrame(driver,"topFrame");            
 //     BaseMethods.ClickElement(page.Create);           
 //     BaseMethods.SwitchFrame(driver,"mainFrame");
@@ -100,11 +100,11 @@ public class tests {
 	@Test
 	 public void test2() throws InterruptedException { //throws InterruptedException {
 			
-//		 LoginPage page = PageFactory.initElements(driver, LoginPage.class);	
-//	     BaseMethods.KeyInElement(page.UserNameText, "ss");            
-//	     BaseMethods.KeyInElement(page.PasswordText, "ss1");           
-//	     BaseMethods.ClickElement(page.LoginButton);
-//	     System.out.println("User name and password entered successfully");            
+		 LoginPage page = PageFactory.initElements(driver, LoginPage.class);	
+	     BaseMethods.KeyInElement(page.UserNameText, "ss");            
+	     BaseMethods.KeyInElement(page.PasswordText, "ss1");           
+	     BaseMethods.ClickElement(page.LoginButton);
+	     System.out.println("User name and password entered successfully");            
 //	     BaseMethods.SwitchFrame("mainFrame");
 //	     BaseMethods.SwitchFrame("topFrame");            
 //	     BaseMethods.ClickElement(page.Create);           

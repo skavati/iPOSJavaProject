@@ -330,7 +330,7 @@ public static  WebDriver driver ;
      // To take screen shot of page
      public  static void captureScreenShot(String obj) throws IOException {
          File screenshotFile=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-         FileUtils.copyFile(screenshotFile,new File("Screenshots\\"+obj+""+GetTimeStampValue()+".png"));
+         FileUtils.copyFile(screenshotFile,new File("C:\\Screenshots\\"+obj+"_"+GetTimeStampValue()+".png"));
    }
 
    public static  String GetTimeStampValue()throws IOException{

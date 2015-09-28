@@ -6,6 +6,8 @@ package Tests;
 import Base.BaseMethods;
 import Base.GlobalVariables;
 import pageObjects.LoginPage;
+
+import java.io.IOException;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -45,7 +47,7 @@ public class tests {
 	
 	@Test
 
- public  void test1() throws InterruptedException { //throws InterruptedException {
+ public  void test1() throws InterruptedException, IOException { //throws InterruptedException {
 				
 	 LoginPage page = PageFactory.initElements(driver, LoginPage.class);	
      BaseMethods.KeyInElement(page.UserNameText, "rh");            
@@ -56,6 +58,7 @@ public class tests {
      BaseMethods.ClickElement(page.Create);           
      BaseMethods.SwitchFrame(driver,"mainFrame");
      TableUtil.TableToXML(driver,"Raised By");
+     BaseMethods.captureScreenShot("AddItemPage");
      // testing for aruna
 //     System.out.println("\t" + TableUtilities.GetTable("Created Date").getAttribute("class"));
 //     WebElement AddItem=BaseMethods.GetElement(driver,(By.id("ibAdd")));

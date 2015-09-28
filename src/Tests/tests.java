@@ -32,9 +32,9 @@ public class tests {
 	@BeforeMethod
 	public void beforeMethod() throws Exception {
 		 
-//		driver= BaseMethods.GetDriver("ie");  
-//		driver.manage().window().maximize();        
-//       BaseMethods.driver.navigate().to("http://" + GlobalVariables.iPOSServer + "/iPOS/Web/Login.aspx"); 
+		driver= BaseMethods.GetDriver("ie");  
+		driver.manage().window().maximize();        
+       BaseMethods.driver.navigate().to("http://" + GlobalVariables.iPOSServer + "/iPOS/Web/Login.aspx"); 
 	}
 	
 	@AfterMethod

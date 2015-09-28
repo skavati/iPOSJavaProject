@@ -126,9 +126,9 @@ public static void setCellData(String CellValue,  int RowNum, int ColNum,String 
 
 
 
- @Test
- // To read data from Excel sheets
  
+ // To read data from Excel sheets
+ @Test
  public static void ReadDataFromExcel (){ 
 	 boolean KeyCellfound;   
  try {

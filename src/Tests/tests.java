@@ -91,7 +91,7 @@ public class tests {
 //     System.out.println("\t" + TableUtilities.GetTable(driver,"Created Date").getAttribute("class"));
      //BaseMethods.TakeScreenShot();
 //     softAssert.assertAll();
-		 
+		 //test
 	}	   
 	
 	@Test

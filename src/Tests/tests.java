@@ -57,7 +57,7 @@ public class tests {
      BaseMethods.SwitchFrame(driver,"topFrame");            
      BaseMethods.ClickElement(page.Create);           
      BaseMethods.SwitchFrame(driver,"mainFrame");
-     TableUtil.TableToXML(driver,"Raised By");
+//     TableUtil.TableToXML(driver,"Raised By");
 //     BaseMethods.captureScreenShot(driver,"AddItemPage");
      // testing for aruna
 //     System.out.println("\t" + TableUtilities.GetTable("Created Date").getAttribute("class"));

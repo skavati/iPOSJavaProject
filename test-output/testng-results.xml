@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="9427" started-at="2015-09-28T04:47:49Z" finished-at="2015-09-28T04:47:58Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="9427" started-at="2015-09-28T04:47:49Z" finished-at="2015-09-28T04:47:58Z">
+      <class name="Tests.tests">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.tests@62043840]" name="beforeMethod" is-config="true" duration-ms="4283" started-at="2015-09-28T14:47:49Z" finished-at="2015-09-28T14:47:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:Tests.tests@62043840]" name="test1" duration-ms="180" started-at="2015-09-28T14:47:53Z" finished-at="2015-09-28T14:47:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:Tests.tests@62043840]" name="AfterMethod" is-config="true" duration-ms="1" started-at="2015-09-28T14:47:53Z" finished-at="2015-09-28T14:47:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.tests@62043840]" name="beforeMethod" is-config="true" duration-ms="3704" started-at="2015-09-28T14:47:53Z" finished-at="2015-09-28T14:47:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="test2()[pri:0, instance:Tests.tests@62043840]" name="test2" duration-ms="144" started-at="2015-09-28T14:47:57Z" finished-at="2015-09-28T14:47:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:Tests.tests@62043840]" name="AfterMethod" is-config="true" duration-ms="0" started-at="2015-09-28T14:47:57Z" finished-at="2015-09-28T14:47:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+      </class> <!-- Tests.tests -->
+      <class name="utilities.ExcelUtil">
+        <test-method status="PASS" signature="ReadDataFromExcel()[pri:0, instance:utilities.ExcelUtil@327471b5]" name="ReadDataFromExcel" duration-ms="1104" started-at="2015-09-28T14:47:57Z" finished-at="2015-09-28T14:47:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ReadDataFromExcel -->
+      </class> <!-- utilities.ExcelUtil -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

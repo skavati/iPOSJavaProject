@@ -22,20 +22,21 @@ public class ParallelTesting {
    public String URL, Node;
    protected ThreadLocal<RemoteWebDriver> threadDriver = null;
    
-   @Parameters("browser")
+   @Parameters({"browser","node"})
+   
    @BeforeTest
-   public void launchapp(String browser) throws MalformedURLException
+   public void launchapp(String browser ,String node) throws MalformedURLException
    {
       String URL = "http://www.calculator.net";
       
       if (browser.equalsIgnoreCase("firefox"))
       {
          System.out.println(" Executing on FireFox");
-         String Node = "http://10.112.66.52:5555/wd/hub";
+//         String Node = "http://10.112.66.52:5555/wd/hub";
          DesiredCapabilities cap = DesiredCapabilities.firefox();
          cap.setBrowserName("firefox");
          
-         driver = new RemoteWebDriver(new URL(Node), cap);
+         driver = new RemoteWebDriver(new URL(node), cap);
          // Puts an Implicit wait, Will wait for 10 seconds before throwing exception
          driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);         
          // Launch website
@@ -47,35 +48,23 @@ public class ParallelTesting {
          System.out.println(" Executing on CHROME");
          DesiredCapabilities cap = DesiredCapabilities.chrome();
          cap.setBrowserName("chrome");
-         String Node = "http://10.1.13.172:5556/wd/hub";
-         driver = new RemoteWebDriver(new URL(Node), cap);
+//         String Node = "http://10.1.13.172:5556/wd/hub";
+         driver = new RemoteWebDriver(new URL(node), cap);
          driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
          
          // Launch website
          driver.navigate().to(URL);
          driver.manage().window().maximize();
       }
-      else if (browser.equalsIgnoreCase("chrome2"))
-      {
-         System.out.println(" Executing on CHROME");
-         DesiredCapabilities cap = DesiredCapabilities.chrome();
-         cap.setBrowserName("chrome");
-         String Node = "http://10.1.11.97:5555/wd/hub";
-         driver = new RemoteWebDriver(new URL(Node), cap);
-         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-         
-         // Launch website
-         driver.navigate().to(URL);
-         driver.manage().window().maximize();
-      }
+      
       else if (browser.equalsIgnoreCase("ie"))
       {
          System.out.println(" Executing on IE");
          DesiredCapabilities cap = DesiredCapabilities.internetExplorer();
          cap.setBrowserName("ie");
 //         cap.setVersion("11");
-         String Node = "http://10.1.11.97:5555/wd/hub";
-         driver = new RemoteWebDriver(new URL(Node), cap);
+//         String Node = "http://10.1.11.97:5555/wd/hub";
+         driver = new RemoteWebDriver(new URL(node), cap);
          driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
          
          // Launch website

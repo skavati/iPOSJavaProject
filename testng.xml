@@ -11,7 +11,7 @@
    </test>
 
    <test name="ChromeTest 2 on qaipos3">
-   <parameter name="browser" value="ie" /> 
+   <parameter name="browser" value="chrome" /> 
    <parameter name="node" value="http://10.1.13.172:5556/wd/hub" />    
       <classes>
          <class name="seleniumGrid.ParallelTesting" />

@@ -37,8 +37,7 @@ public class ParallelTesting {
          
          driver = new RemoteWebDriver(new URL(Node), cap);
          // Puts an Implicit wait, Will wait for 10 seconds before throwing exception
-         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-         
+         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);         
          // Launch website
          driver.navigate().to(URL);
          driver.manage().window().maximize();

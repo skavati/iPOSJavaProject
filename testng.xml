@@ -2,15 +2,17 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite" parallel="tests">
 
-   <test name="ChromeTest">
+   <test name="ChromeTest on sunskava1">
    <parameter name="browser" value="chrome" />
+   <parameter name="node" value="http://10.1.11.97:5555/wd/hub" />  
       <classes>
          <class name="seleniumGrid.ParallelTesting" />
       </classes>
    </test>
 
-   <test name="ChromeTest 2">
-   <parameter name="browser" value="chrome2" />   
+   <test name="ChromeTest 2 on qaipos3">
+   <parameter name="browser" value="ie" /> 
+   <parameter name="node" value="http://10.1.13.172:5556/wd/hub" />    
       <classes>
          <class name="seleniumGrid.ParallelTesting" />
       </classes>
